@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고정바 배치</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .top_bar {
+            background-color: crimson;
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .left_bar {
+            background-color: blue;
+            width: 50px;
+            height: 100%;
+            position: fixed;
+            top: 50px; /* top_bar 아래부터 시작 */
+            left: 0;
+        }
+        .container {
+            margin-top: 50px; /* top_bar 높이만큼 아래로 */
+            margin-left: 50px; /* left_bar 너비만큼 오른쪽으로 */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top_bar"></div>
+    <div class="left_bar"></div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi iusto dolore, placeat eveniet quasi magni officia pariatur quos similique culpa quae earum nemo consequatur neque iure repellendus delectus unde.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet vero ab neque earum autem alias dicta ducimus, minima aliquam corrupti! Porro, ad aperiam. Pariatur eum explicabo modi sit expedita officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum doloremque quisquam eos recusandae aperiam aut nesciunt harum. Reiciendis voluptate dolores repellat eligendi eaque, eveniet facilis veritatis voluptates ipsum. Culpa, facere?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo dolorem beatae, itaque doloribus modi similique voluptas perspiciatis perferendis commodi labore voluptates placeat adipisci sapiente aliquid laborum laudantium? Deserunt, provident temporibus?</p>
+    </div>
+</body>
+</html>
