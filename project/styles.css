@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #fff;
+}
+
+footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-top: 1px solid #eaeaea;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.icon-item img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #888;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px; /* 이미지와 텍스트 사이 여백 */
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px; /* 메뉴 간 여백 */
+  justify-content: center; /* 중앙 정렬 */
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap; /* 화면 좁아지면 줄바꿈 */
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: border-bottom 0.2s;
+}
+
+.nav-menu a:hover {
+  border-bottom: 2px solid #007bff; /* 마우스 올릴 때 밑줄 */
+}
+
+.welcome {
+  text-align: center;
+}
+
+
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .thred-section ul li a:hover {
+    text-decoration: none; /* 기본 밑줄 제거 */
+    border-bottom: 2px solid #1a1aff; /* 파란 밑줄 추가 */
+    padding-bottom: 2px; /* 밑줄과 글자 간 여백 */
+  }
+
+  .footer-section ul li a:hover {
+  text-decoration: none; /* 기본 밑줄 제거 */
+  border-bottom: 2px solid #1a1aff; /* 파란 밑줄 추가 */
+  padding-bottom: 2px; /* 밑줄과 글자 간 여백 */
+}
+
+}

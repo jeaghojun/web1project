@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      for (let i = 0; i < 10; i++) {
+        $('<h1>New Created Element ' + i + '</h1>')
+          .css({
+            backgroundColor: 'black',
+            color: 'red'
+          })
+          .appendTo('body');
+      }
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>
+<!-- This code creates 10 new <h1> elements with a black background and red text, appending them to the body of the document. -->

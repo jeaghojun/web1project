@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메모 웹페이지</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    main {
+      padding: 40px 20px;
+    }
+    footer {
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+    .footer-section {
+      flex: 1 1 180px;
+      margin: 10px;
+    }
+    .footer-section h4 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 30px;
+      color: #888;
+    }
+    .language-select {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .language-select button {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      background-color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .social-icons img {
+      width: 20px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    @media screen and (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AI 메모 웹페이지</h1>
+  </header>
+
+  <main>
+    <h2>환영합니다!</h2>
+    <p>이곳은 AI 기반 메모, 정리, 문서화 기능을 제공하는 웹 플랫폼입니다.</p>
+  </main>
+
+  <section id="terms" style="padding: 40px 20px;">
+    <h2>이용약관</h2>
+    <p>본 웹사이트를 사용함으로써 귀하는 다음의 조건에 동의하게 됩니다. 이 웹사이트의 모든 콘텐츠는 저작권 보호를 받으며, 무단 복제 및 배포는 법적 책임을 질 수 있습니다...</p>
+  </section>
+
+  <section id="privacy" style="padding: 40px 20px;">
+    <h2>개인정보처리방침</h2>
+    <p>당사는 사용자의 개인정보를 중요시하며, 관련 법령에 따라 보호하고 있습니다. 수집된 개인정보는 서비스 제공 목적 외에 사용되지 않으며, 사용자의 동의 없이 제3자에게 제공하지 않습니다...</p>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <img src="logo.png" alt="Logo" style="width: 100px;">
+        <div class="social-icons">
+          <img src="C:\Users\AI-510-164\Documents\html 사진 모음" alt="Instagram">
+          <img src="https://th.bing.com/th/id/OIP.-Exflwn3hLKV2qJuY6mA7wHaHa?rs=1&pid=ImgDetMain" alt="X">
+          <img src="linkedin.svg" alt="LinkedIn">
+          <img src="https://th.bing.com/th/id/OIP.R6r7ysUv8siXLLhtDlEh5QHaE8?w=249&h=180&c=7&r=0&o=5&pid=1.7" alt="YouTube">
+        </div>
+        <div class="language-select">
+          <button>🌐 한국어</button>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>회사 소개</h4>
+        <ul>
+          <li>회사 소개</li>
+          <li>채용</li>
+          <li>보안</li>
+          <li>서비스 상태</li>
+          <li><a href="#terms">이용약관</a></li>
+          <li><a href="#privacy">개인정보처리방침</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>다운로드</h4>
+        <ul>
+          <li>iOS & Android</li>
+          <li>Mac & Windows</li>
+          <li>캘린더</li>
+          <li>Web Clipper</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>자료</h4>
+        <ul>
+          <li>도움말 센터</li>
+          <li>요금제</li>
+          <li>블로그</li>
+          <li>커뮤니티</li>
+          <li>API 통합</li>
+          <li>템플릿</li>
+          <li>추천인</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>용도별</h4>
+        <ul>
+          <li>회사</li>
+          <li>팀</li>
+          <li>개인</li>
+          <li><strong>더 살펴보기 →</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>개인정보 판매나 공유를 원하지 않으시면 클릭해주세요.</p>
+      <p>쿠키 설정</p>
+      <p>&copy; 2025 Notion Labs, Inc.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+<!-- This is a simple HTML template for a memo web page with a footer section. -->
